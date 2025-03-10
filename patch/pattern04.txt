@@ -1,0 +1,1 @@
+    static async backupGame(_shop, objectId, backupPath, winePrefix) {

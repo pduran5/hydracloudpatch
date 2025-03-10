@@ -1,0 +1,2 @@
+    static async uploadSaveGame(objectId, shop, downloadOptionTitle, label) {
+        const hasActiveSubscription = true;

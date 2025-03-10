@@ -1,0 +1,7 @@
+        await tar.create({
+            gzip: false,
+            file: tarLocation,
+            cwd: backupPath
+        }, [
+            "."
+        ]);

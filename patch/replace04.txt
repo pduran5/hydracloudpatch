@@ -1,0 +1,10 @@
+    static async cloudGame(_shop, objectId, backupPath, winePrefix) {
+        return this.worker.run({
+            title: objectId,
+            backupPath,
+            winePrefix
+        }, {
+            name: "cloudGame"
+        });
+    }
+    static async backupGame(_shop, objectId, backupPath, winePrefix) {

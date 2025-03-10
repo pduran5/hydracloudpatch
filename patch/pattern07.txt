@@ -1,0 +1,7 @@
+    static async uploadSaveGame(objectId, shop, downloadOptionTitle, label) {
+        const hasActiveSubscription = await db.get(levelKeys.user, {
+            valueEncoding: "json"
+        }).then((user)=>{
+            const expiresAt = user?.subscription?.expiresAt;
+            return expiresAt && (isFuture(expiresAt) || isToday(expiresAt));
+        });

@@ -1,0 +1,4 @@
+              disabled: disableActions || !backupPreview?.overall.totalGames || artifacts.length >= backupsPerGameLimit,
+              children: [
+                uploadingBackup ? /* @__PURE__ */ jsxRuntimeExports.jsx(SyncIcon, { className: "cloud-sync-modal__sync-icon" }) : /* @__PURE__ */ jsxRuntimeExports.jsx(UploadIcon, {}),
+                t2("create_backup")

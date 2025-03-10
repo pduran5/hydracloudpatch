@@ -1,0 +1,7 @@
+        const args = [
+            "backup",
+            title,
+            "--api",
+            "--force"
+        ];
+        args.push("--format", "zip");

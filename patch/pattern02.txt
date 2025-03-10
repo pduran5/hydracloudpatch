@@ -1,0 +1,4 @@
+  const uploadSaveGame = reactExports.useCallback(
+    async (downloadOptionTitle) => {
+      setUploadingBackup(true);
+      window.electron.uploadSaveGame(objectId, shop, downloadOptionTitle);

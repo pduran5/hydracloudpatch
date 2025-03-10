@@ -1,0 +1,7 @@
+        const backupPath = path.join(backupsPath, `${shop}-${objectId}`);
+        if (fs.existsSync(backupPath)) {
+            fs.rmSync(backupPath, {
+                recursive: true
+            });
+        }
+        await Ludusavi.backupGame(shop, objectId, backupPath, winePrefix);
