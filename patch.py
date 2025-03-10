@@ -70,7 +70,7 @@ def process_js_files(directory, pattern_replace_pairs):
 
 def main():
     # Directorio actual para patterns/replace y búsqueda de .js
-    base_directory = 'app.asar.extract/out'
+    base_directory = 'resources/app.asar.extract/out'
 
     # Obtener pares pattern/replace del directorio actual
     pattern_replace_pairs = get_pattern_replace_pairs()

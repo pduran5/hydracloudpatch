@@ -1,5 +1,8 @@
 # Hydra Launcher Cloud Patch
-- Abrir WSL en %localappdata%\Programs\Hydra. Dar ejecutar y poner `wsl --cd %localappdata%\Programs\Hydra`
+Programa para parchear Hydra Launcher y añadir funciones de guardado de partidas, trofeos y configuraciones de juegos en la nube (p.ej. Google Drive).
+
+
+- Abrir `wsl --cd %localappdata%\Programs\Hydra`
 - Instalar asar (sólo la 1a vez): `sudo snap install asar`
 - Ejecutar:
 ```

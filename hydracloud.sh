@@ -7,6 +7,7 @@ echo '>> Descomprimiendo app.asar...'
 asar e app.asar app.asar.extract
 
 echo '>> Parcheando Hydra...'
+cd ..
 python3 patch.py
 
 # Comprimir paquete app.asar
