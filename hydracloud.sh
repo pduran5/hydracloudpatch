@@ -1,5 +1,7 @@
 #!/bin/bash
 
+cd resources
+
 # Descomprimir paquete app.asar
 echo '>> Descomprimiendo app.asar...'
 asar e app.asar app.asar.extract
