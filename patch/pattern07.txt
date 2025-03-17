@@ -2,6 +2,6 @@
         const hasActiveSubscription = await db.get(levelKeys.user, {
             valueEncoding: "json"
         }).then((user)=>{
-            const expiresAt = user?.subscription?.expiresAt;
-            return expiresAt && (isFuture(expiresAt) || isToday(expiresAt));
+            const expiresAt = new Date(user?.subscription?.expiresAt ?? 0);
+            return expiresAt > new Date();
         });
