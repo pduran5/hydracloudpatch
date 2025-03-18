@@ -1,4 +1,4 @@
   const hasActiveSubscription = reactExports.useMemo(() => {
-    const expiresAt = userDetails?.subscription?.expiresAt;
-    return expiresAt && (isFuture(expiresAt) || isToday(expiresAt));
+    const expiresAt = new Date(userDetails?.subscription?.expiresAt ?? 0);
+    return expiresAt > /* @__PURE__ */ new Date();
   }, [userDetails]);
